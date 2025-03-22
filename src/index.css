@@ -13,3 +13,25 @@ max-width: 100%;
 display: block;
 height: auto;
 }
+
+body {
+  font-family: Inter;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  padding: 2em;
+  gap: 0.5em;
+}
+
+nav img {
+  width: 40px;
+}
+
+span {
+  color: #61DAFB;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
