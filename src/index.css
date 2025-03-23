@@ -5,7 +5,10 @@
 }
 
 :root {
---primary-color: --secondary-color: ;
+--primary-color: #282d35;
+--secondary-color: #21222A; 
+--misc: #61DAFB;
+--font: 
 }
 
 img {
@@ -16,12 +19,15 @@ height: auto;
 
 body {
   font-family: Inter;
+  background-color: var(--primary-color);
+  max-width: 45rem;
+  border: 1px solid var(--misc);
 }
 
 nav {
   display: flex;
   align-items: center;
-  background-color: #21222A;
+  background-color: var(--secondary-color);
   padding: 2em;
   gap: 0.5em;
 }
@@ -31,7 +37,35 @@ nav img {
 }
 
 span {
-  color: #61DAFB;
+  color: var(--misc);
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+main {
+  background-image: url(./assets/images/reactjs-icon2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 12rem;
+  padding: 3em;
+  color: white;
+}
+
+main h1 {
+  font-size: 2.5rem;
+}
+
+.facts-list {
+  margin-top: 2em;
+  max-width: 25rem;
+  margin-left: 1.5em;
+}
+
+.facts-list li {
+  margin-top: 1.5em;
+}
+
+.facts-list li::marker {
+  color: var(--misc);
+  font-size: 1.7rem;
 }
